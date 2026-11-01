@@ -1,0 +1,271 @@
+# ─────────────────────────────────────────────────────────────
+#  Everything on the site lives in this file.
+#
+#  SECTIONS appear in the order listed, and each gets a nav link.
+#  A section has:
+#    title:  heading + nav label
+#    id:     (optional) anchor for the URL, e.g. #releases. Defaults from title.
+#    type:   (optional) default item type for the section: album | link
+#    items:  the entries (see below)
+#
+#  The special section `type: about` takes `image:` and `bio:` instead of items.
+#
+#  ITEM fields:
+#    type:   album | link   (overrides the section default)
+#    artist: (optional) shown in bold before the title
+#    title:  release / work name
+#    note:   (optional) roles or a description, e.g. "Violin, String Arrangement"
+#    image:  (album only) file in src/images/, e.g. "albums/home-movies.jpg".
+#            Square works best. Leave it out and a placeholder tile is shown.
+#    image_fit: (optional) "contain" to show a non-square image uncropped.
+#    links:  list of { label, url }. For albums these appear when you
+#            hover / tap the cover. For links, the first is the main link and
+#            the rest show as "(+ label)".
+# ─────────────────────────────────────────────────────────────
+
+name: "Zachary Mezzo"
+tagline: "Violinist & composer, New York"
+description: "Zachary Mezzo is an experimental violinist and composer from New York."
+
+# Small links under the nav in the sidebar
+social:
+  - label: "Instagram"
+    url: "https://www.instagram.com/mezzo4te/"
+  - label: "Bandcamp"
+    url: "https://zacharymezzo.bandcamp.com"
+
+sections:
+  - title: "About"
+    type: about
+    image: "zach-headshot.jpg"
+    image_credit: "Photo: Gabriel Civita Ramirez"
+    image_alt: "Zachary Mezzo"
+    bio: |
+      **Zachary Mezzo** is an experimental violinist and composer from New York, whose music blends elements of ambient, minimalism, electronics, and noise. His live sets feature a vulnerable, physical performance style and provide an immersive listener experience, juxtaposing intimate textures with an in-your-face aggression.
+
+      Mezzo’s debut full-length record *Home Movies*—a collage of field recordings, DIY chamber music, and dissected songwriting—was released on Crane Operator (Orange Label Records) in April 2026. The album melds a wide variety of recording methods and audio sources with raw takes of violin, voice, and processed piano to create an unusual blend of texture and style. *Home Movies* explores the moments between these sounds and amplifies them to expose the cracks. As a follow-up to his electronic focused noise-violin EP *Proximity*, this record follows a more organic path, inviting listeners to reflect in the quiet spaces created, while still maintaining a dissonant edge and a through-line of discomfort that is essential to Mezzo’s writing.
+
+      His most recent performance project is the Zachary Mezzo String Ensemble, an all-star cast of New York strings players brought together for an evening-length guided improvisation piece using only stopwatches and a set of written instructions as the score. Their debut performance was documented on the album *Live at Stone Circle*.
+
+      Mezzo was formerly a member of the rock band Catcher and has collaborated with countless artists in the NYC music scene and beyond including Christopher Emond, Alana Markel, knotted, Mila Culpa, Miss Grit, ideasforconversations, Been Stellar, Holidays in the United States and more. He has composed for ensembles such as JACK Quartet, Bearthoven Trio, Unheard-of Ensemble, NYU Contemporary Music Ensemble and is an active score composer and arranger. Recent projects include *The Magus Circle* (ByWitchlight Games) and the experimental feature *Cat Video (2027)*. He holds a B.M. in Music Theory and Composition from NYU where he studied with Michael Gordon and Justin Dello Joio.
+
+  - title: "Releases"
+    type: album
+    items:
+      - title: "Home Movies"
+        image: "albums/home-movies.jpg"
+        links:
+          - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/home-movies" }
+          - { label: "CD", url: "https://www.olrecords.com/store/p/zachary-mezzo-home-movies-cd-preorder" }
+      - title: "christopher emond + ideasforconversation + zacharymezzo"
+        image: "albums/crane-operator-split.jpg"
+        links:
+          - { label: "Listen", url: "https://craneoperator.lnk.to/CraneOperatorpresentsi4ccezm" }
+          - { label: "CD", url: "https://www.olrecords.com/news/crane-operator-presents-ideasforconversations-christopher-emond-zachary-mezzo-split-ep" }
+      - title: "Live at Stone Circle"
+        image: "albums/live-at-stone-circle.jpg"
+        links:
+          - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/live-at-stone-circle" }
+      - title: "Three Sketches"
+        image: "albums/three-sketches.jpg"
+        links:
+          - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/three-sketches" }
+      - title: "Proximity EP"
+        image: "albums/proximity.jpg"
+        links:
+          - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/proximity" }
+
+  - title: "Recording Credits"
+    id: credits
+    type: album
+    items:
+      - artist: "Mila Culpa"
+        title: "Sad Clown"
+        image: "albums/mila-culpa.jpg"
+        note: "Violin, String Arrangement"
+        links:
+          - { label: "Bandcamp", url: "https://onewordsentence.bandcamp.com/track/sad-clown" }
+      - artist: "Miss Grit"
+        title: "Overflow"
+        image: "albums/miss-grit.jpg"
+        note: "Violin, String Arrangement"
+        links:
+          - { label: "Bandcamp", url: "https://missgrit.bandcamp.com/track/overflow" }
+      - artist: "knotted"
+        title: "maybe more"
+        image: "albums/knotted.jpg"
+        note: "Violin, String Arrangement and Production"
+        links:
+          - { label: "Bandcamp", url: "https://knotted.bandcamp.com/track/maybe-more" }
+      - artist: "Other Faces"
+        title: "Self Titled"
+        image: "albums/other-faces.jpg"
+        note: "Violin and Pedals (Tracks 3, 5)"
+        links:
+          - { label: "Bandcamp", url: "https://otherfacesband.bandcamp.com/album/other-faces" }
+      - artist: "Dirty Churches"
+        title: "We Are Painters"
+        image: "albums/dirty-churches.jpg"
+        note: "Violin and Pedals, Improvisation"
+        links:
+          - { label: "Bandcamp", url: "https://dirtychurches.bandcamp.com/track/we-are-painters" }
+      - artist: "Holidays in the United States"
+        title: "How to Count to Five"
+        image: "albums/holidays.jpg"
+        note: "Violin (Tracks 2, 9)"
+        links:
+          - { label: "Bandcamp", url: "https://holidaysinunitedstates.bandcamp.com/album/how-to-count-to-five" }
+      - artist: "Catcher"
+        title: "30 Million Windows"
+        image: "albums/catcher-30mw.jpg"
+        note: "Violin, Co-Composer"
+        links:
+          - { label: "YouTube", url: "https://www.youtube.com/playlist?list=OLAK5uy_lWoQtMzEOc7Nhj1EhMA9fsKlSBb_oGSzw" }
+      - artist: "Catcher"
+        title: "The Fat of a Broken Heart"
+        image: "albums/catcher-tfoabh.jpg"
+        note: "Violin, Co-Composer"
+        links:
+          - { label: "Bandcamp", url: "https://catcherband.bandcamp.com/album/the-fat-of-a-broken-heart" }
+      - artist: "Unheard-of Ensemble"
+        title: "CCI Sessions Vol. 4, Last Play"
+        image: "albums/unheard-of.jpg"
+        note: "Composer"
+        links:
+          - { label: "Bandcamp", url: "https://unheardofproject.bandcamp.com/track/zachary-mezzo-last-play" }
+      - artist: "Yaz Lancaster"
+        title: "Window Frame"
+        image: "albums/yaz-lancaster.jpg"
+        note: "Composer"
+        links:
+          - { label: "Bandcamp", url: "https://peopleplacesrecords.bandcamp.com/track/window-frame-zachary-mezzo" }
+      - artist: "Monobloc"
+        title: "Stay"
+        image: "albums/monobloc.jpg"
+        note: "Violin"
+        links:
+          - { label: "YouTube", url: "https://youtu.be/0FBJcVYfxug" }
+      - artist: "Current Joys"
+        title: "Sufferer"
+        image: "albums/current-joys.jpg"
+        note: "Violin II"
+        links:
+          - { label: "YouTube", url: "https://youtu.be/2LDFLZF1Kb4" }
+      - artist: "Shower curtain"
+        title: "Benadryl man"
+        image: "albums/shower-curtain.jpg"
+        note: "Violin and Pedals"
+        links:
+          - { label: "Bandcamp", url: "https://showercurtain.bandcamp.com/album/benadryl-man" }
+      - artist: "Caused by Carelessness"
+        title: "Nothing to Fear"
+        image: "albums/caused-by-carelessness.jpg"
+        note: "Violin, String Arrangement"
+        links:
+          - { label: "Bandcamp", url: "https://causedbycarelessness.bandcamp.com/track/nothing-to-fear" }
+      - artist: "Mike Baretz"
+        title: "Wrong"
+        image: "albums/mike-baretz.jpg"
+        note: "Violin"
+        links:
+          - { label: "YouTube", url: "https://www.youtube.com/watch?v=GQ8hh2zkWZw" }
+      - artist: "Harla"
+        title: "Doll"
+        image: "albums/harla.jpg"
+        note: "Violin"
+        links:
+          - { label: "Bandcamp", url: "https://harla.bandcamp.com/track/doll" }
+      - artist: "Death dance"
+        title: "Ghost you know EP"
+        image: "albums/death-dance.jpg"
+        note: "Violin (Tracks 1, 2)"
+        links:
+          - { label: "Bandcamp", url: "https://deathdancemusic.bandcamp.com/album/ghost-you-know" }
+
+  - title: "Live Performances"
+    id: live
+    type: link
+    items:
+      - title: "Zachary Mezzo - Solo Set at First Live (Feb 19 2025)"
+        links: [{ url: "https://www.youtube.com/watch?v=J58557TzytQ" }]
+      - title: "Zachary Mezzo - Proximity Live (Live @ Alchemical Studios)"
+        links: [{ url: "https://www.youtube.com/watch?v=qSgemDJ2vrM" }]
+      - title: "Dan English x Indie Hourszz"
+        links: [{ url: "https://www.youtube.com/watch?v=S6oSYiDXc5s" }]
+      - title: "knotted ft Zachary Mezzo @TheLotRadio 08-14-2025"
+        links: [{ url: "https://www.youtube.com/watch?v=12OB2saPCZ4" }]
+      - title: "knotted live april 24 2025 @ rabbit hole"
+        links: [{ url: "https://youtu.be/Ko13dRbaLtg" }]
+      - title: "Fugue State - Everything Happens Again (Live)"
+        links: [{ url: "https://youtu.be/1JVItuoTkHg" }]
+      - title: "Fugue State - Reflections (Live)"
+        links: [{ url: "https://youtu.be/AHyOeDte6d0" }]
+      - title: "Catcher, Audiotree Live"
+        links: [{ url: "https://youtu.be/RkcZz9w4-Lg" }]
+      - title: "Dirty Churches Live at Pompeii"
+        links: [{ url: "https://soundcloud.com/jesse-gelaznik/dirty-churches-live-at-pompei" }]
+      - title: "Dirty Churches Live at The Sex Shop"
+        links: [{ url: "https://soundcloud.com/jesse-gelaznik/dirty-churches-live-at-the-sex" }]
+      - title: "Dirty Churches Live at Cassette"
+        links: [{ url: "https://soundcloud.com/jesse-gelaznik/dirty-churches-live-at" }]
+
+  - title: "Scoring"
+    items:
+      - type: album
+        title: "The Magus Circle"
+        image: "albums/magus-circle.jpg"
+        image_fit: contain
+        note: "Violin, Co-Composer, Additional Mixing and Production"
+        links:
+          - { label: "Steam", url: "https://store.steampowered.com/app/2796640/The_Magus_Circle/" }
+      - type: album
+        title: "Pets by Sami Jano"
+        image: "albums/pets.jpg"
+        note: "Technical Score Assistant, Violin, Additional Engineering"
+        links:
+          - { label: "YouTube", url: "https://youtube.com/playlist?list=PLXaH20eIS38Y7j_Fv6yLRdRMrchNN7vYf" }
+      - type: link
+        title: "Luca Civita, Teeth Trouble"
+        note: "Composer, Violin"
+        links: [{ url: "https://youtu.be/Oc8PeHa74Iw" }]
+      - type: link
+        title: "Plastic Bag Hand Man, Sum"
+        note: "Additional Music Composer, Violin"
+        links:
+          - { url: "https://www.youtube.com/watch?v=Wo3HHwIga2Y" }
+          - { label: "Game Link", url: "https://plasticbaghandman.itch.io/sum" }
+      - type: link
+        title: "Woom Bikes, The Best Gift Ever"
+        note: "Composer, Arranger, Violin"
+        links: [{ url: "https://www.youtube.com/watch?v=sfsnmnUgZxc" }]
+
+  - title: "Concert Works"
+    id: concert
+    type: link
+    items:
+      - title: "Last Play (2022)"
+        note: "Violin, Cello, Clarinet, Piano, and Electronics, written for Unheard-of Ensemble"
+        links: [{ url: "https://www.youtube.com/watch?v=xP9pLHNjFs0" }]
+      - title: "Increscent (2024)"
+        note: "Flute, Oboe, Saxophone, and Percussion, written for Yarn/Wire Institute 2024"
+        links: [{ url: "https://www.youtube.com/watch?v=ZxcnZi8FtUQ" }]
+      - title: "Signal (2023)"
+        note: "Solo Clarinet and Electronics, written for Ford Fourqurean"
+        links: [{ url: "https://soundcloud.com/zachary-mezzo/signal" }]
+      - title: "Mirror garden (2021)"
+        note: "String Quartet, written for the JACK Quartet"
+        links: [{ url: "https://www.youtube.com/watch?v=oOloIgiZ5UA" }]
+      - title: "IMPACT (2021)"
+        note: "Piano, Drums, Bass, and Electronics, written for Bearthoven Trio"
+        links: [{ url: "https://www.youtube.com/watch?v=fAqbWhPtxfA" }]
+      - title: "digital_cosmos (2021)"
+        note: "Fixed Media and Video"
+        links: [{ url: "https://www.youtube.com/watch?v=6n_9yBQROsE&t=2454s" }]
+
+  - title: "Contact"
+    type: link
+    items:
+      - title: "zachary.mezzo@gmail.com"
+        links: [{ url: "mailto:zachary.mezzo@gmail.com" }]
+      - title: "Instagram (@mezzo4te)"
+        links: [{ url: "https://www.instagram.com/mezzo4te/" }]

@@ -1,0 +1,86 @@
+---
+layout: base.njk
+---
+{%- macro itemName(item) -%}
+  {%- if item.artist %}<strong>{{ item.artist }}</strong><span class="dash"> – </span>{% endif -%}
+  <em>{{ item.title }}</em>
+{%- endmacro -%}
+
+<div class="page">
+  <aside class="sidebar">
+    <h1 class="site-name"><a href="#top">{{ site.name }}</a></h1>
+    {% if site.tagline %}<p class="tagline">{{ site.tagline }}</p>{% endif %}
+    <nav class="nav">
+      {% for section in site.sections %}
+      <a href="#{{ section | sectionId }}">{{ section.title }}</a>
+      {% endfor %}
+    </nav>
+    {% if site.social %}
+    <nav class="social">
+      {% for s in site.social %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>{% endfor %}
+    </nav>
+    {% endif %}
+  </aside>
+
+  <main class="content" id="top">
+    {% for section in site.sections %}
+    <section class="section section--{{ section.type or 'mixed' }}" id="{{ section | sectionId }}">
+      <h2 class="section-title">{{ section.title }}</h2>
+
+      {% if section.type == "about" %}
+      <div class="about">
+        {% if section.image %}
+        <figure class="about-photo">
+          <img src="/images/{{ section.image }}" alt="{{ section.image_alt or site.name }}">
+          {% if section.image_credit %}<figcaption>{{ section.image_credit }}</figcaption>{% endif %}
+        </figure>
+        {% endif %}
+        <div class="bio">{{ section.bio | markdown | safe }}</div>
+      </div>
+
+      {% else %}
+      {% for group in section.items | groupByType(section.type or "link") %}
+
+        {% if group.type == "album" %}
+        <ul class="albums">
+          {% for item in group.items %}
+          <li class="album">
+            <div class="album-cover" tabindex="0" role="button" aria-haspopup="true" aria-label="Show links for {{ item.title }}">
+              {% if item.image %}
+              <img src="/images/{{ item.image }}" alt="{{ item.artist ~ ' – ' if item.artist }}{{ item.title }} cover" loading="lazy" width="400" height="400"{% if item.image_fit == "contain" %} class="fit-contain"{% endif %}>
+              {% else %}
+              <span class="album-placeholder">{{ item.title }}</span>
+              {% endif %}
+              <ul class="album-links">
+                {% for link in item.links %}
+                <li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label or "Listen" }} ↗</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            <p class="album-name">{{ itemName(item) }}</p>
+            {% if item.note %}<p class="note">{{ item.note }}</p>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+
+        {% else %}
+        <ul class="links">
+          {% for item in group.items %}
+          {% set main = item.links[0] %}
+          <li>
+            {% if main %}<a href="{{ main.url }}"{% if not main.url.startsWith("mailto:") %} target="_blank" rel="noopener"{% endif %}>{{ itemName(item) }}</a>{% else %}{{ itemName(item) }}{% endif %}
+            {%- for extra in item.links.slice(1) %} <span class="extra">(+ <a href="{{ extra.url }}" target="_blank" rel="noopener">{{ extra.label or "Link" }}</a>)</span>{% endfor %}
+            {% if item.note %}<span class="note">{{ item.note }}</span>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+      {% endfor %}
+      {% endif %}
+    </section>
+    {% endfor %}
+
+    <footer class="footer">© {{ site.name }}</footer>
+  </main>
+</div>
