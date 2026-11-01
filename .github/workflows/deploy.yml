@@ -24,9 +24,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      # PATH_PREFIX: "/<repo>/" while served from the github.io URL.
-      # Change to "/" once a custom domain (CNAME) is set up.
-      - run: npx @11ty/eleventy --pathprefix="${{ vars.PATH_PREFIX || '/zacharymezzo.com/' }}"
+      # Served from the custom domain root (zacharymezzo.com, set in Settings → Pages).
+      - run: npx @11ty/eleventy
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

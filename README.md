@@ -37,7 +37,7 @@ npm run build      # outputs the static site to _site/
 
 Pushing to `main` builds and deploys to GitHub Pages via `.github/workflows/deploy.yml`.
 
-**Custom domain:** once `zacharymezzo.com` DNS points at GitHub Pages, add `src/CNAME` containing `zacharymezzo.com`, add `eleventyConfig.addPassthroughCopy("src/CNAME")` to `eleventy.config.js`, set a repo variable `PATH_PREFIX` = `/` (Settings → Secrets and variables → Actions → Variables), and set the domain under Settings → Pages.
+**Custom domain:** `zacharymezzo.com` is set in the repo's Settings → Pages. DNS is managed in Squarespace Domains (A records → GitHub Pages IPs, `www` CNAME → `sourencho.github.io`).
 
 Colours and fonts are CSS variables at the top of `src/css/style.css`.
 
