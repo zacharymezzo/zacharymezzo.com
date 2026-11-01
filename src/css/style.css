@@ -209,3 +209,9 @@ strong { font-weight: 600; }
   html { scroll-behavior: auto; }
   .album-cover img, .album-links { transition: none; }
 }
+
+/* Force the ↗ to render as a text glyph, not an emoji */
+.arrow {
+  font-family: var(--sans);
+  font-variant-emoji: text;
+}
