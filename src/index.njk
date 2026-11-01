@@ -31,7 +31,7 @@ layout: base.njk
       <div class="about">
         {% if section.image %}
         <figure class="about-photo">
-          <img src="/images/{{ section.image }}" alt="{{ section.image_alt or site.name }}">
+          <img src="images/{{ section.image }}" alt="{{ section.image_alt or site.name }}">
           {% if section.image_credit %}<figcaption>{{ section.image_credit }}</figcaption>{% endif %}
         </figure>
         {% endif %}
@@ -47,7 +47,7 @@ layout: base.njk
           <li class="album">
             <div class="album-cover" tabindex="0" role="button" aria-haspopup="true" aria-label="Show links for {{ item.title }}">
               {% if item.image %}
-              <img src="/images/{{ item.image }}" alt="{{ item.artist ~ ' – ' if item.artist }}{{ item.title }} cover" loading="lazy" width="400" height="400"{% if item.image_fit == "contain" %} class="fit-contain"{% endif %}>
+              <img src="images/{{ item.image }}" alt="{{ item.artist ~ ' – ' if item.artist }}{{ item.title }} cover" loading="lazy" width="400" height="400"{% if item.image_fit == "contain" %} class="fit-contain"{% endif %}>
               {% else %}
               <span class="album-placeholder">{{ item.title }}</span>
               {% endif %}
