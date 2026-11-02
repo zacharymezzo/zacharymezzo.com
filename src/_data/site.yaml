@@ -5,14 +5,15 @@
 #  A section has:
 #    title:  heading + nav label
 #    id:     (optional) anchor for the URL, e.g. #releases. Defaults from title.
-#    type:   (optional) default item type for the section: album | link | youtube
+#    type:   (optional) default item type for the section: album | link | youtube | soundcloud
 #    items:  the entries (see below)
 #
 #  The special section `type: about` takes `image:` and `bio:` instead of items.
 #
 #  ITEM fields:
-#    type:   album | link | youtube   (overrides the section default)
+#    type:   album | link | youtube | soundcloud   (overrides the section default)
 #    youtube: embeds the first link's video, with title/note/links below
+#    soundcloud: embeds the first link's SoundCloud player, with title/note/links below
 #    artist: (optional) shown in bold before the title
 #    title:  release / work name
 #    note:   (optional) roles or a description, e.g. "Violin, String Arrangement"
@@ -221,11 +222,14 @@ sections:
       - type: youtube
         title: "Catcher, Audiotree Live"
         links: [{ url: "https://youtu.be/RkcZz9w4-Lg" }]
-      - title: "Dirty Churches Live at Pompeii"
+      - type: soundcloud
+        title: "Dirty Churches Live at Pompeii"
         links: [{ url: "https://soundcloud.com/jesse-gelaznik/dirty-churches-live-at-pompei" }]
-      - title: "Dirty Churches Live at The Sex Shop"
+      - type: soundcloud
+        title: "Dirty Churches Live at The Sex Shop"
         links: [{ url: "https://soundcloud.com/jesse-gelaznik/dirty-churches-live-at-the-sex" }]
-      - title: "Dirty Churches Live at Cassette"
+      - type: soundcloud
+        title: "Dirty Churches Live at Cassette"
         links: [{ url: "https://soundcloud.com/jesse-gelaznik/dirty-churches-live-at" }]
 
   - title: "Scoring"

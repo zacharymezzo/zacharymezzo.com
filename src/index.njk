@@ -85,6 +85,22 @@ layout: base.njk
           {% endfor %}
         </ul>
 
+        {% elif group.type == "soundcloud" %}
+        <ul class="tracks">
+          {% for item in group.items %}
+          {% set main = item.links[0] %}
+          <li class="track">
+            <iframe class="track-player" title="{{ item.title }}" loading="lazy" allow="autoplay"
+              src="https://w.soundcloud.com/player/?url={{ main.url | urlencode }}&amp;color=%23262626&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false&amp;visual=false"></iframe>
+            <p class="video-name">
+              <a href="{{ main.url }}" target="_blank" rel="noopener">{{ itemName(item) }}</a>
+              {%- for extra in item.links.slice(1) %} <span class="extra">(+ <a href="{{ extra.url }}" target="_blank" rel="noopener">{{ extra.label or "Link" }}</a>)</span>{% endfor %}
+            </p>
+            {% if item.note %}<p class="note">{{ item.note }}</p>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+
         {% else %}
         <ul class="links">
           {% for item in group.items %}
