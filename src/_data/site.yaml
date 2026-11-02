@@ -244,7 +244,7 @@ sections:
         links:
           - { label: "YouTube", url: "https://youtube.com/playlist?list=PLXaH20eIS38Y7j_Fv6yLRdRMrchNN7vYf" }
       - type: youtube
-        title: "Luca Civita, Teeth Trouble"
+        title: "Luca Civita, The Stakeholding Encroachment"
         note: "Composer, Violin"
         links: [{ url: "https://youtu.be/Oc8PeHa74Iw" }]
       - type: youtube
