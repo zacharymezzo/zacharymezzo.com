@@ -12,7 +12,7 @@
 #
 #  ITEM fields:
 #    type:   album | link | youtube   (overrides the section default)
-#            youtube: embeds the first link's video, with title/note/links below
+#    youtube: embeds the first link's video, with title/note/links below
 #    artist: (optional) shown in bold before the title
 #    title:  release / work name
 #    note:   (optional) roles or a description, e.g. "Violin, String Arrangement"
