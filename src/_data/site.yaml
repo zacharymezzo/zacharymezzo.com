@@ -55,7 +55,7 @@ sections:
 
       His most recent performance project is the Zachary Mezzo String Ensemble, an all-star cast of New York strings players brought together for an evening-length guided improvisation piece using only stopwatches and a set of written instructions as the score. Their debut performance was documented on the album *Live at Stone Circle*.
 
-      Mezzo was formerly a member of the rock band Catcher and has collaborated with countless artists in the NYC music scene and beyond including Christopher Emond, Alana Markel, knotted, Mila Culpa, Miss Grit, ideasforconversations, Been Stellar, Holidays in the United States and more. He has composed for ensembles such as JACK Quartet, Bearthoven Trio, Unheard-of Ensemble, NYU Contemporary Music Ensemble and is an active score composer and arranger. Recent projects include *The Magus Circle* (ByWitchlight Games) and the experimental feature *Cat Video (2027)*. He holds a B.M. in Music Theory and Composition from NYU where he studied with Michael Gordon and Justin Dello Joio.
+      Mezzo was a member of the rock band Catcher and has collaborated with countless artists in the NYC music scene and beyond including Christopher Emond, Alana Markel, knotted, Mila Culpa, Miss Grit, ideasforconversations, Been Stellar, Holidays in the United States and more. He has composed for ensembles such as JACK Quartet, Bearthoven Trio, Unheard-of Ensemble, NYU Contemporary Music Ensemble and is an active score composer and arranger. Recent projects include *The Magus Circle* (ByWitchlight Games) and the experimental feature *Cat Video (2027)*. He holds a B.M. in Music Theory and Composition from NYU where he studied with Michael Gordon and Justin Dello Joio.
 
   - title: "Releases"
     type: album
@@ -65,7 +65,7 @@ sections:
         links:
           - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/home-movies" }
           - { label: "CD", url: "https://www.olrecords.com/store/p/zachary-mezzo-home-movies-cd-preorder" }
-      - title: "Crane Operator Presents...ifc+ce+zm"
+      - title: "Crane Operator Presents...i4c+ce+zm"
         image: "albums/crane-operator-split.jpg"
         links:
           - { label: "Listen", url: "https://craneoperator.lnk.to/CraneOperatorpresentsi4ccezm" }
@@ -79,10 +79,6 @@ sections:
         links:
           - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/three-sketches" }
       - title: "Proximity EP"
-        image: "albums/proximity.jpg"
-        links:
-          - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/proximity" }
-      - title: "Test"
         image: "albums/proximity.jpg"
         links:
           - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/proximity" }
