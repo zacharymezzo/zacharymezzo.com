@@ -25,7 +25,7 @@
 # ─────────────────────────────────────────────────────────────
 
 name: "Zachary Mezzo"
-tagline: "Violinist & composer, New York"
+tagline: "Violinist & Composer, New York"
 description: "Zachary Mezzo is an experimental violinist and composer from New York."
 url: "https://zacharymezzo.com"   # used to build the full link to the share image
 
@@ -64,7 +64,7 @@ sections:
         links:
           - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/home-movies" }
           - { label: "CD", url: "https://www.olrecords.com/store/p/zachary-mezzo-home-movies-cd-preorder" }
-      - title: "christopher emond + ideasforconversation + zacharymezzo"
+      - title: "Crane Operator Presents...ifc+ce+zm"
         image: "albums/crane-operator-split.jpg"
         links:
           - { label: "Listen", url: "https://craneoperator.lnk.to/CraneOperatorpresentsi4ccezm" }
@@ -78,6 +78,10 @@ sections:
         links:
           - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/three-sketches" }
       - title: "Proximity EP"
+        image: "albums/proximity.jpg"
+        links:
+          - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/proximity" }
+      - title: "Test"
         image: "albums/proximity.jpg"
         links:
           - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/proximity" }
