@@ -5,13 +5,14 @@
 #  A section has:
 #    title:  heading + nav label
 #    id:     (optional) anchor for the URL, e.g. #releases. Defaults from title.
-#    type:   (optional) default item type for the section: album | link
+#    type:   (optional) default item type for the section: album | link | youtube
 #    items:  the entries (see below)
 #
 #  The special section `type: about` takes `image:` and `bio:` instead of items.
 #
 #  ITEM fields:
-#    type:   album | link   (overrides the section default)
+#    type:   album | link | youtube   (overrides the section default)
+#            youtube: embeds the first link's video, with title/note/links below
 #    artist: (optional) shown in bold before the title
 #    title:  release / work name
 #    note:   (optional) roles or a description, e.g. "Violin, String Arrangement"
@@ -186,21 +187,29 @@ sections:
     id: live
     type: link
     items:
-      - title: "Zachary Mezzo - Solo Set at First Live (Feb 19 2025)"
+      - type: youtube
+        title: "Zachary Mezzo - Solo Set at First Live (Feb 19 2025)"
         links: [{ url: "https://www.youtube.com/watch?v=J58557TzytQ" }]
-      - title: "Zachary Mezzo - Proximity Live (Live @ Alchemical Studios)"
+      - type: youtube
+        title: "Zachary Mezzo - Proximity Live (Live @ Alchemical Studios)"
         links: [{ url: "https://www.youtube.com/watch?v=qSgemDJ2vrM" }]
-      - title: "Dan English x Indie Hourszz"
+      - type: youtube
+        title: "Dan English x Indie Hourszz"
         links: [{ url: "https://www.youtube.com/watch?v=S6oSYiDXc5s" }]
-      - title: "knotted ft Zachary Mezzo @TheLotRadio 08-14-2025"
+      - type: youtube
+        title: "knotted ft Zachary Mezzo @TheLotRadio 08-14-2025"
         links: [{ url: "https://www.youtube.com/watch?v=12OB2saPCZ4" }]
-      - title: "knotted live april 24 2025 @ rabbit hole"
+      - type: youtube
+        title: "knotted live april 24 2025 @ rabbit hole"
         links: [{ url: "https://youtu.be/Ko13dRbaLtg" }]
-      - title: "Fugue State - Everything Happens Again (Live)"
+      - type: youtube
+        title: "Fugue State - Everything Happens Again (Live)"
         links: [{ url: "https://youtu.be/1JVItuoTkHg" }]
-      - title: "Fugue State - Reflections (Live)"
+      - type: youtube
+        title: "Fugue State - Reflections (Live)"
         links: [{ url: "https://youtu.be/AHyOeDte6d0" }]
-      - title: "Catcher, Audiotree Live"
+      - type: youtube
+        title: "Catcher, Audiotree Live"
         links: [{ url: "https://youtu.be/RkcZz9w4-Lg" }]
       - title: "Dirty Churches Live at Pompeii"
         links: [{ url: "https://soundcloud.com/jesse-gelaznik/dirty-churches-live-at-pompei" }]
@@ -224,17 +233,17 @@ sections:
         note: "Technical Score Assistant, Violin, Additional Engineering"
         links:
           - { label: "YouTube", url: "https://youtube.com/playlist?list=PLXaH20eIS38Y7j_Fv6yLRdRMrchNN7vYf" }
-      - type: link
+      - type: youtube
         title: "Luca Civita, Teeth Trouble"
         note: "Composer, Violin"
         links: [{ url: "https://youtu.be/Oc8PeHa74Iw" }]
-      - type: link
+      - type: youtube
         title: "Plastic Bag Hand Man, Sum"
         note: "Additional Music Composer, Violin"
         links:
           - { url: "https://www.youtube.com/watch?v=Wo3HHwIga2Y" }
           - { label: "Game Link", url: "https://plasticbaghandman.itch.io/sum" }
-      - type: link
+      - type: youtube
         title: "Woom Bikes, The Best Gift Ever"
         note: "Composer, Arranger, Violin"
         links: [{ url: "https://www.youtube.com/watch?v=sfsnmnUgZxc" }]

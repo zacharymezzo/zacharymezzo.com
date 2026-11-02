@@ -63,6 +63,28 @@ layout: base.njk
           {% endfor %}
         </ul>
 
+        {% elif group.type == "youtube" %}
+        <ul class="videos">
+          {% for item in group.items %}
+          {% set main = item.links[0] %}
+          {% set yt = main.url | youtube %}
+          <li class="video">
+            {% if yt %}
+            <a class="video-frame" href="{{ main.url }}" target="_blank" rel="noopener"
+               data-yt="{{ yt.id }}" data-start="{{ yt.start }}" aria-label="Play {{ item.title }}">
+              <img src="https://i.ytimg.com/vi/{{ yt.id }}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+              <span class="video-play" aria-hidden="true"></span>
+            </a>
+            {% endif %}
+            <p class="video-name">
+              <a href="{{ main.url }}" target="_blank" rel="noopener">{{ itemName(item) }}</a>
+              {%- for extra in item.links.slice(1) %} <span class="extra">(+ <a href="{{ extra.url }}" target="_blank" rel="noopener">{{ extra.label or "Link" }}</a>)</span>{% endfor %}
+            </p>
+            {% if item.note %}<p class="note">{{ item.note }}</p>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+
         {% else %}
         <ul class="links">
           {% for item in group.items %}

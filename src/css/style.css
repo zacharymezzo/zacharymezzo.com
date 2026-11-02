@@ -178,6 +178,58 @@ strong { font-weight: 600; }
 .links .extra { color: var(--muted); font-size: 13px; }
 .links .note { display: block; font-size: 13px; margin-top: 0.1rem; }
 
+/* ── YouTube videos ────────────────────────────────────── */
+.videos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.25rem var(--gap);
+  margin-bottom: 2.5rem;
+}
+.video-frame {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  background: #111;
+  overflow: hidden;
+}
+.video-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.25s ease;
+}
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  border: 1px solid var(--fg);
+  border-radius: 50%;
+  background: var(--overlay);
+  transition: background 0.2s ease;
+}
+.video-play::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -6px;
+  border-style: solid;
+  border-width: 10px 0 10px 17px;
+  border-color: transparent transparent transparent var(--fg);
+}
+.video-frame:hover img { filter: brightness(0.75); }
+.video-frame:hover .video-play { background: rgba(0, 0, 0, 0.9); }
+.video-name { margin: 0.7rem 0 0; font-size: 15px; line-height: 1.45; }
+.video-name em { font-style: normal; }
+.video-name a { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+.video-name a:hover { text-decoration-color: var(--muted); }
+.video-name .extra { color: var(--muted); font-size: 13px; }
+.video .note { margin: 0.15rem 0 0; font-size: 13px; line-height: 1.45; }
+
 .footer { color: var(--muted); font-size: 12px; padding: 1rem 0 2rem; }
 
 /* ── Responsive ────────────────────────────────────────── */
@@ -203,6 +255,7 @@ strong { font-weight: 600; }
   html { scroll-padding-top: 8rem; }
   .about { grid-template-columns: 1fr; }
   .albums { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.75rem 1rem; }
+  .videos { grid-template-columns: 1fr; gap: 1.75rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

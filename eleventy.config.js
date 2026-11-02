@@ -23,6 +23,22 @@ export default function (eleventyConfig) {
     String(section.title).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
   );
 
+  // YouTube URL (watch?v=, youtu.be/, embed/, shorts/) -> { id, start }
+  eleventyConfig.addFilter("youtube", (url = "") => {
+    try {
+      const u = new URL(url);
+      let id = u.searchParams.get("v");
+      if (!id) {
+        const m = u.pathname.match(/^\/(?:embed\/|shorts\/|live\/)?([\w-]{11})/);
+        id = m && m[1];
+      }
+      const t = u.searchParams.get("t") || u.searchParams.get("start");
+      return id ? { id, start: t ? parseInt(t, 10) || 0 : 0 } : null;
+    } catch {
+      return null;
+    }
+  });
+
   // Split a section's items into consecutive runs of the same type,
   // so albums render as a grid and links as a list, in the order written.
   eleventyConfig.addFilter("groupByType", (items = [], defaultType = "link") => {
