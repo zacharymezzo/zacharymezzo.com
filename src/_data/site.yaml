@@ -102,7 +102,7 @@ sections:
       - artist: "knotted"
         title: "maybe more"
         image: "albums/knotted.jpg"
-        note: "Violin, String Arrangement and Production"
+        note: "Violin, String Arrangement"
         links:
           - { label: "Bandcamp", url: "https://knotted.bandcamp.com/track/maybe-more" }
       - artist: "Other Faces"
