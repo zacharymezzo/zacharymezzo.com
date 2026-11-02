@@ -27,6 +27,12 @@
 name: "Zachary Mezzo"
 tagline: "Violinist & composer, New York"
 description: "Zachary Mezzo is an experimental violinist and composer from New York."
+url: "https://zacharymezzo.com"   # used to build the full link to the share image
+
+# Picture shown when the site is shared (iMessage, Instagram, Slack, etc.).
+# A file in src/images/. Swap the file, or point this at a different one.
+# About 1200×630 is ideal, but any size works.
+share_image: "share.jpg"
 
 # Small links under the nav in the sidebar
 social:
