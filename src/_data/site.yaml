@@ -64,7 +64,7 @@ sections:
         image: "albums/home-movies.jpg"
         links:
           - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/home-movies" }
-          - { label: "CD", url: "https://www.olrecords.com/store/p/zachary-mezzo-home-movies-cd-preorder" }
+          - { label: "CD", url: "https://www.olrecords.com/store/p/crane-operator-presents-i4ccezm-cd-pre-order" }
       - title: "Crane Operator Presents...i4c+ce+zm"
         image: "albums/crane-operator-split.jpg"
         links:
