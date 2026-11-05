@@ -195,8 +195,8 @@ sections:
     type: link
     items:
       - type: youtube
-        title: "Zachary Mezzo - Solo Set at First Live (Feb 19 2025)"
-        links: [{ url: "https://www.youtube.com/watch?v=J58557TzytQ" }]
+        title: "Zachary Mezzo - Untitled for Electric Violin (Live @ SoStudios)"
+        links: [{ url: "https://youtu.be/FKX_yHuyiqs?si=V1MFY-kpM-P5aSGL" }]
       - type: youtube
         title: "Zachary Mezzo - Proximity Live (Live @ Alchemical Studios)"
         links: [{ url: "https://www.youtube.com/watch?v=qSgemDJ2vrM" }]
