@@ -154,8 +154,8 @@ sections:
         links:
           - { label: "YouTube", url: "https://youtu.be/0FBJcVYfxug" }
       - artist: "Current Joys"
-        title: "Sufferer"
-        image: "albums/currentjoys_rosebud.jpg"
+        title: "Rosebud"
+        image: "albums/currentjoys_rosebud.jpeg"
         note: "Violin II"
         links:
           - { label: "Listen", url: "https://stem.ffm.to/rosebud" }
