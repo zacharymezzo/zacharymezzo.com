@@ -155,10 +155,10 @@ sections:
           - { label: "YouTube", url: "https://youtu.be/0FBJcVYfxug" }
       - artist: "Current Joys"
         title: "Sufferer"
-        image: "albums/current-joys.jpg"
+        image: "albums/currentjoys_rosebud.jpg"
         note: "Violin II"
         links:
-          - { label: "YouTube", url: "https://youtu.be/2LDFLZF1Kb4" }
+          - { label: "Listen", url: "https://stem.ffm.to/rosebud" }
       - artist: "Shower curtain"
         title: "Benadryl man"
         image: "albums/shower-curtain.jpg"
