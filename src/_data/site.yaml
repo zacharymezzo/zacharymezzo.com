@@ -74,7 +74,7 @@ sections:
         image: "albums/live-at-stone-circle.jpg"
         links:
           - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/live-at-stone-circle" }
-      - title: "Three Sketches"
+      - title: "three sketches"
         image: "albums/three-sketches.jpg"
         links:
           - { label: "Bandcamp", url: "https://zacharymezzo.bandcamp.com/album/three-sketches" }
