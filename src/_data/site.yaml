@@ -156,7 +156,7 @@ sections:
       - artist: "Current Joys"
         title: "Rosebud"
         image: "albums/currentjoys_rosebud.jpeg"
-        note: "Violin II"
+        note: "Violin II (Tracks 4, 10)"
         links:
           - { label: "Listen", url: "https://stem.ffm.to/rosebud" }
       - artist: "Shower curtain"
