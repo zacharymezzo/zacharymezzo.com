@@ -132,7 +132,7 @@ sections:
       - artist: "Catcher"
         title: "30 Million Windows"
         image: "albums/catcher-30mw.jpg"
-        note: "Violin, Co-Composer, Additional String Arrangement"
+        note: "Violin, Co-Composer, String Arrangement"
         links:
           - { label: "YouTube", url: "https://www.youtube.com/playlist?list=OLAK5uy_lWoQtMzEOc7Nhj1EhMA9fsKlSBb_oGSzw" }
       - artist: "Catcher"
