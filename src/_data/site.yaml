@@ -88,6 +88,12 @@ sections:
     type: album
     items:
       - artist: "Mila Culpa"
+        title: "No Shame"
+        image: "albums/MilaCulpa_NoShameAlbumArt.jpeg"
+        note: "Violin, String Arrangement"
+        links:
+          - { label: "Listen", url: "https://www.youtube.com/watch?v=sXtIpmxSmzo&list=OLAK5uy_n1lAqV-SGGt3KfG-0vrJKSo8A1DOQvwn4&index=1" }
+      - artist: "Mila Culpa"
         title: "Sad Clown"
         image: "albums/mila-culpa.jpg"
         note: "Violin, String Arrangement"
