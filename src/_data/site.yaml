@@ -87,6 +87,12 @@ sections:
     id: credits
     type: album
     items:
+      - artist: "Kennedy Mann"
+        title: "Optimistic"
+        image: "albums/KennedyMan_EPCover.jpeg"
+        note: "Violin, String Arrangement"
+        links:
+          - { label: "Bandcamp", url: "https://kennedymann.bandcamp.com/track/optimistic" }
       - artist: "Mila Culpa"
         title: "No Shame"
         image: "albums/MilaCulpa_NoShameAlbumArt.jpeg"
