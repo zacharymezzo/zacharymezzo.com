@@ -89,7 +89,7 @@ sections:
     items:
       - artist: "Kennedy Mann"
         title: "Optimistic"
-        image: "albums/KennedyMan_EPCover.jpeg"
+        image: "albums/KennedyMan_EPCover.avif"
         note: "Violin, String Arrangement"
         links:
           - { label: "Bandcamp", url: "https://kennedymann.bandcamp.com/track/optimistic" }
