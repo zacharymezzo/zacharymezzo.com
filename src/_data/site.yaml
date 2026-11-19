@@ -138,13 +138,13 @@ sections:
       - artist: "Catcher"
         title: "30 Million Windows"
         image: "albums/catcher-30mw.jpg"
-        note: "Violin, Co-Composer, String Arrangement"
+        note: "Violin and Pedals, Co-Composer, String Arrangement"
         links:
           - { label: "YouTube", url: "https://www.youtube.com/playlist?list=OLAK5uy_lWoQtMzEOc7Nhj1EhMA9fsKlSBb_oGSzw" }
       - artist: "Catcher"
         title: "The Fat of a Broken Heart"
         image: "albums/catcher-tfoabh.jpg"
-        note: "Violin, Co-Composer"
+        note: "Violin and Pedals, Co-Composer"
         links:
           - { label: "Bandcamp", url: "https://catcherband.bandcamp.com/album/the-fat-of-a-broken-heart" }
       - artist: "Unheard-of Ensemble"
